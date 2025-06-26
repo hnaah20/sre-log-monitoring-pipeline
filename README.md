@@ -43,6 +43,24 @@ sre-log-monitoring-pipeline/
 ├── high_memory_alert.png
 └── failed_login_event.png
 
+## 📊 Live Visualizations
+
+### 🔁 Real-time Log Transmission
+![Real-time log transmission](splunk_screenshots/real_time_logs.png)
+
+### 📈 System Metrics Dashboard (Splunk)
+![System metrics dashboard](splunk_screenshots/raw_log_table.png)
+![System metrics dashboard](splunk_screenshots/raw_log_entries.png)
+![System metrics dashboard](splunk_screenshots/log_severity_barchart.png)
+![System metrics dashboard](splunk_screenshots/log_upload_frequency.png)
+
+### 🚨 High Memory Usage Alert
+![High memory alert](splunk_screenshots/high_resource_usage_alert.png)
+
+### ❌ Failed Login Detection
+![Failed login detection](splunk_screenshots/memory_or_failed_login_alert.png)
+
+
 
 ## 🧠 Author
 
