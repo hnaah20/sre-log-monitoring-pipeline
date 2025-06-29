@@ -32,7 +32,7 @@ A containerized log monitoring system using Python, Flask, Docker, and Splunk. D
 ![Docker logs](splunk_screenshots/docker_logs.png)
 
 ### 📥 Search and Reporting (Splunk)
-![Splunk Searching](docs/splunk_search.png)
+![Splunk Searching](splunk_screenshots/splunk_search.png)
 
 ## Getting Started
 
