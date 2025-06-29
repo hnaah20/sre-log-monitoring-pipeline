@@ -24,7 +24,7 @@ A containerized log monitoring system using Python, Flask, Docker, and Splunk. D
 
 ### 🎯 System Dashboard (Splunk)
 ![CPU over Time](splunk_screenshots/cpu_usage.png)
-![System Message Breakdown](splunk_screenshots/sys_msg.png)
+![System Message Breakdown](splunk_screenshots/sys_msg_breakdown.png)
 ![System Health Table](splunk_screenshots/sys_health.png)
 
 ### 🐳 Docker Containers Running
