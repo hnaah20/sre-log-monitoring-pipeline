@@ -1,69 +1,70 @@
-# SRE Log Monitoring Pipeline
+# System Log Monitoring Pipeline
 
-A real-world simulation of a system log collection and monitoring pipeline for SRE and SOC roles. This project uses Python to collect system metrics and Windows logs in real time, transmits them securely via a Flask-based API, and forwards all telemetry into Splunk for dashboarding and alerting.
+A containerized log monitoring system using Python, Flask, Docker, and Splunk. Designed to simulate real-time telemetry, forward structured logs, and visualize system health in dashboards. Built to demonstrate practical observability, alerting, and infrastructure automation for Site Reliability Engineering workflows.
 
-## 📌 Features
+## Stack Used
 
-- Real-time telemetry every 10 seconds
-- CPU, memory, disk usage, and event log extraction via PowerShell
-- Token-authenticated log transmission to Flask server
-- Splunk dashboard integration for visualization
-- Alerting logic for high memory usage and failed login attempts
-- Regex-based field extraction for CPU, memory, disk, alert, and message
+- Python 3.10
+- Docker + Docker Compose
+- Flask (log receiver)
+- psutil + requests (sender)
+- Splunk (log visualization and alerting)
+- Terraform (in progress) for EC2 deployment
 
-## 🎯 Tech Stack
+## Features
 
-- Python + Flask
-- psutil + subprocess + requests
-- Splunk (dashboarding + alerting)
-- PowerShell (log export)
+- Real-time system telemetry generation (CPU, memory, disk)
+- Token-based authentication
+- Dockerized sender and receiver containers
+- Structured JSON logs written to file and Splunk
+- Dashboards showing system metrics and alerts
+- Optional cloud deployment using Terraform
+  
+## 🧪 Screenshots
 
-## 📊 Live Visualizations
+### 🎯 System Dashboard (Splunk)
+![CPU over Time](splunk_screenshots/cpu_usage.png)
+![System Message Breakdown](splunk_screenshots/sys_msg.png)
+![System Health Table](splunk_screenshots/sys_health.png)
 
-| Metric | Description |
-|--------|-------------|
-| 📈 `system_metrics_dashboard.png` | CPU, memory, and disk usage trends over time |
-| 🔔 `high_memory_alert.png`       | Triggered alert when memory > 85%             |
-| ❌ `failed_login_event.png`      | Detected suspicious activity in log stream    |
-| 🛰️ `real_time_logs.png`          | 10-second log transmission simulation         |
+### 🐳 Docker Containers Running
+![Docker ps output](splunk_screenshots/docker_ps.png)
+![Docker logs](splunk_screenshots/docker_logs.png)
 
-## 🚀 Use Case
+### 📥 Search and Reporting (Splunk)
+![Splunk Searching](docs/splunk_search.png)
 
-Designed to simulate real telemetry pipelines seen in SRE and SOC teams — ideal for incident response, root cause analysis, and performance monitoring.
+## Getting Started
 
-## 📁 Folder Structure
+### 1. Clone the repository
+```bash
+git clone https://github.com/hnaah20/sre-log-monitoring-pipeline
+cd sre-log-monitoring-pipeline
 
-sre-log-monitoring-pipeline/
-├── log_sender.py
-├── log_receiver.py
+### 2. Start with Docker Compose
+docker-compose up --build
+
+### 3. Access services
+Flask Log Receiver: http://localhost:5000
+Splunk: http://localhost:8000 (if configured locally)
+Logs are saved to receiver/logs/system.log
+.
+├── sender/
+│   └── Dockerfile
+│   └── web_log_sender.py
+├── receiver/
+│   └── Dockerfile
+│   └── web_log_receiver.py
+├── logs/
+│   └── system.log
+├── docker-compose.yml
 ├── README.md
-└── screenshots/
-├── real_time_logs.png
-├── system_metrics_dashboard.png
-├── high_memory_alert.png
-└── failed_login_event.png
+└── RUNBOOK.md
 
-## 📊 Live Visualizations
-
-### 🔁 Real-time Log Transmission
-![Real-time log transmission](splunk_screenshots/real_time_logs.png)
-
-### 📈 System Metrics Dashboard (Splunk)
-![System metrics dashboard](splunk_screenshots/raw_log_table.png)
-![System metrics dashboard](splunk_screenshots/raw_log_entries.png)
-![System metrics dashboard](splunk_screenshots/log_severity_barchart.png)
-![System metrics dashboard](splunk_screenshots/log_upload_frequency.png)
-
-### 🚨 High Memory Usage Alert
-![High memory alert](splunk_screenshots/high_resource_usage_alert.png)
-
-### ❌ Failed Login Detection
-![Failed login detection](splunk_screenshots/memory_or_failed_login_alert.png)
-
-
-
-## 🧠 Author
+## Author
 
 **Hannah Susan Cherian**  
-DFIR Enthusiast | Building SRE & SOC Skills | Security+ Certified | VIT-AP University 
+Final-year B.Tech CSE (Cybersecurity) | VIT-AP University  
+📧 x.hannah999@gmail.com  
+🔗 [LinkedIn](https://linkedin.com/in/hannah-susan-cherian694317275)
 
