@@ -1,0 +1,23 @@
+services:
+  receiver:
+    build:
+      context: ./receiver
+    container_name: receiver
+    ports:
+      - "5000:5000"
+    networks:
+      - lognet
+    volumes:
+      - ./receiver/logs:/app/logs
+
+  sender:
+    build:
+      context: ./sender
+    container_name: sender
+    depends_on:
+      - receiver
+    networks:
+      - lognet
+
+networks:
+  lognet:
