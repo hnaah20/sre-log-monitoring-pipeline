@@ -34,7 +34,7 @@ A containerized log monitoring system using Python, Flask, Docker, and Splunk. D
 ### 📥 Search and Reporting (Splunk)
 ![Splunk Searching](splunk_screenshots/splunk_search.png)
 
-````markdown
+
 ## Getting Started
 
 ### 1. Clone the repository
