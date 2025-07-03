@@ -20,18 +20,18 @@ A containerized log monitoring system using Python, Flask, Docker, and Splunk. D
 - Dashboards showing system metrics and alerts
 - Optional cloud deployment using Terraform
   
-## 🧪 Screenshots
+##  Screenshots
 
-### 🎯 System Dashboard (Splunk)
+###  System Dashboard (Splunk)
 ![CPU over Time](splunk_screenshots/cpu_usage.png)
 ![System Message Breakdown](splunk_screenshots/sys_msg_breakdown.png)
 ![System Health Table](splunk_screenshots/sys_health.png)
 
-### 🐳 Docker Containers Running
+### Docker Containers Running
 ![Docker ps output](splunk_screenshots/docker_ps.png)
 ![Docker logs](splunk_screenshots/docker_logs.png)
 
-### 📥 Search and Reporting (Splunk)
+### Search and Reporting (Splunk)
 ![Splunk Searching](splunk_screenshots/splunk_search.png)
 
 
@@ -58,9 +58,9 @@ docker-compose up --build
 
 ---
 
-## 👩‍💻 Author
+## Author
 
 **Hannah Susan Cherian**
 Final-year B.Tech CSE (Cybersecurity) | VIT-AP University
-📧 [x.hannah999@gmail.com](mailto:x.hannah999@gmail.com)
-🔗 [LinkedIn](https://linkedin.com/in/hannah-susan-cherian694317275)
+[x.hannah999@gmail.com](mailto:x.hannah999@gmail.com)
+[LinkedIn](https://linkedin.com/in/hannah-susan-cherian694317275)
