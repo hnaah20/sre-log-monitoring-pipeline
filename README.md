@@ -48,15 +48,6 @@ docker-compose up --build
 Flask Log Receiver: http://localhost:5000
 Splunk: http://localhost:8000 (if configured locally)
 Logs are saved to receiver/logs/system.log
-.
-sre-log-monitoring-pipeline/
-├── screenshots/
-│   ├── cpu_panel.png
-│   ├── message_breakdown.png
-│   ├── health_table.png
-│   ├── docker_ps.png
-│   ├── docker_logs.png
-│   └── splunk_search.png
 
 
 ## Author
