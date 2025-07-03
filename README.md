@@ -34,26 +34,41 @@ A containerized log monitoring system using Python, Flask, Docker, and Splunk. D
 ### 📥 Search and Reporting (Splunk)
 ![Splunk Searching](splunk_screenshots/splunk_search.png)
 
+Got it. Here's a **clean Markdown version of only the section you sent**, properly formatted so you can **copy-paste** it into your `README.md`:
+
+---
+
+````markdown
 ## Getting Started
 
 ### 1. Clone the repository
+
 ```bash
 git clone https://github.com/hnaah20/sre-log-monitoring-pipeline
 cd sre-log-monitoring-pipeline
+````
 
 ### 2. Start with Docker Compose
+
+```bash
 docker-compose up --build
+```
 
 ### 3. Access services
-Flask Log Receiver: http://localhost:5000
-Splunk: http://localhost:8000 (if configured locally)
-Logs are saved to receiver/logs/system.log
 
+* **Flask Log Receiver**: [http://localhost:5000](http://localhost:5000)
+* **Splunk**: [http://localhost:8000](http://localhost:8000) *(if configured locally)*
+* **Logs are saved to**: `receiver/logs/system.log`
 
-## Author
+---
 
-**Hannah Susan Cherian**  
-Final-year B.Tech CSE (Cybersecurity) | VIT-AP University  
-📧 x.hannah999@gmail.com  
+## 👩‍💻 Author
+
+**Hannah Susan Cherian**
+Final-year B.Tech CSE (Cybersecurity) | VIT-AP University
+📧 [x.hannah999@gmail.com](mailto:x.hannah999@gmail.com)
 🔗 [LinkedIn](https://linkedin.com/in/hannah-susan-cherian694317275)
 
+```
+
+---
