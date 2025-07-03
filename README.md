@@ -68,5 +68,3 @@ docker-compose up --build
 Final-year B.Tech CSE (Cybersecurity) | VIT-AP University
 📧 [x.hannah999@gmail.com](mailto:x.hannah999@gmail.com)
 🔗 [LinkedIn](https://linkedin.com/in/hannah-susan-cherian694317275)
-
-```
