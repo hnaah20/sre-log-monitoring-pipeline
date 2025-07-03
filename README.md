@@ -56,8 +56,6 @@ docker-compose up --build
 * **Splunk**: [http://localhost:8000](http://localhost:8000) *(if configured locally)*
 * **Logs are saved to**: `receiver/logs/system.log`
 
----
-
 ## Author
 
 **Hannah Susan Cherian**
